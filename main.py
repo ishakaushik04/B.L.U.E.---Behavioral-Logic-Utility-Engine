@@ -45,7 +45,7 @@ AUDIO_DIR = BASE_DIR / "audio_cache"
 AUDIO_DIR.mkdir(exist_ok=True)
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "").strip()
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 TTS_VOICE = os.environ.get("BLUE_VOICE", "en-US-AriaNeural")
 MAX_HISTORY_TURNS = 12  # user+assistant pairs kept per session, to bound token usage
 
